@@ -1,0 +1,279 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:300,400,700)
+
+*
+	box-sizing: border-box
+
+.row:before, 
+.row:after 
+	content: ""
+	display: table 
+	clear: both
+
+.row:after 
+	clear: both
+
+section
+	padding: 40px 0 0 0 
+	overflow-x: hidden
+
+body
+	margin: 0
+	font-family: 'Muli', sans-serif
+
+.container 
+	width: 100%
+	max-width: 1200px
+	margin: 0 auto
+
+/* JUMBOTRON */
+
+.jumbotron
+	background-image: url(https://zapodaj.net/images/f73e90c12746d.jpg)
+	background-size: 100% 800px
+	background-repeat: no-repeat
+	height: 100%
+	width: 100%
+	background-attachment: fixed
+	padding: 0
+	.navbar
+		background-color: transparent
+		border-color: 	#DCDCDC
+		.navbar-header
+			.navbar-brand
+				font-size: 28px
+				margin-left: 20px
+				color: white
+		.navbar-collapse
+			.navbar-nav
+				float: right
+				a
+					text-transform: uppercase
+					font-size: 16px
+					color: white
+					&:hover
+						text-decoration: underline
+	.introduce
+		.start
+			color: white
+			display: flex
+			flex-direction: column
+			justify-content: center
+			height: 600px
+			text-shadow: 5px 3px 11px
+			align-items: flex-start
+			.name
+				font-weight: bold
+
+/* ABOUT ME */
+
+.about-me
+	height: auto
+	.name
+		text-align: center
+		position: relative
+		h3
+			font-weight: bold
+			font-size: 50px
+		.separator
+			height: 1px
+			width: 378px
+			border-bottom: 5px solid grey
+			margin-bottom: 40px
+			margin-left: auto
+			margin-right: auto
+	.text
+		font-size: 27px
+	.foto
+		margin: 0 auto
+		img
+			width: 313px
+	
+
+/* GALLERY */
+
+.gallery
+	margin-top: 20px
+	.carousel
+		.carousel-inner
+			height: 600px
+			.item
+				img
+					width: 100%
+	
+/* CONTACT */
+
+.contact
+	.data
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		height: 400px
+		h3
+			font-weight: bold
+			font-size: 40px
+		.separator
+			height: 1px
+			width: 378px
+			border-bottom: 5px solid grey
+			margin-bottom: 40px
+			margin-left: auto
+			margin-right: auto
+		p
+			font-size: 25px
+
+
+/* PRICES */
+
+.price
+	height: auto
+	text-align: center
+	h3
+		font-weight: bold
+		font-size: 60px
+	.separator
+		height: 1px
+		width: 378px
+		border-bottom: 5px solid grey
+		margin-bottom: 36px
+		margin-left: auto
+		margin-right: auto
+	h6 
+		letter-spacing: 2px
+		text-transform: uppercase
+		color: #828282
+		font-weight: bold
+	.cl 
+		padding: 0
+		margin: 0
+		.table 
+			padding-top: 40px
+			padding-bottom: 30px
+			text-align: center
+			background-color: #fff
+			border: 1px solid #d6d6d6
+			transition: all .2s ease-in-out
+			cursor: pointer
+			margin-left: 0
+			z-index: 10
+			&:hover 
+				color: #fff
+				z-index: 10
+				background-color: #82ca9c
+				margin-top: -20px
+				color: white
+				border: none
+		.features 
+			margin: 0
+			padding: 0
+			list-style-type: none
+			li 
+				margin-top: 10px
+		.price 
+			min-height: 720px
+			span 
+				font-size: 70px
+				font-weight: 300
+				color: #333c4d
+				transition: all .2s ease-in-out
+				.dolar 
+					vertical-align: top
+					font-size: 17px
+
+
+/* FOOTER */
+
+footer
+	height: 50px
+	margin-top: 10px
+	display: flex
+	align-items: center
+	justify-content: center
+	background-color: 	#DCDCDC
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media(max-width: 767px)
+	.jumbotron	
+		.navbar
+			left: 0
+			border-radius: 0px
+			.navbar-collapse
+				.navbar-nav
+					float: none
+					li
+						text-align: center
+	.about-me
+		.foto
+			img
+				margin: 0 auto
+		.text
+			margin-top: 52px
+			text-align: center
+			font-size: 15px
+	.gallery
+		.carousel
+			.carousel-inner
+				height: auto
+	.contact
+		.maps
+			iframe
+				width: 100%
+		.data
+			text-align: center
+			margin-top: 50px
+
+@media(min-width: 768px) and (max-width: 991px)
+	.jumbotron	
+		.navbar
+			left: 0
+			border-radius: 0px
+			.navbar-collapse
+				.navbar-nav
+					float: none
+					li
+						text-align: center
+						a
+							font-size: 17px
+	.about-me
+		.foto
+			img
+				margin: 0 auto
+		.text
+			margin-top: 52px
+			text-align: center
+			font-size: 20px
+	.gallery
+		.carousel
+			.carousel-inner
+				height: auto
+	.contact
+		.maps
+			iframe
+				width: 100%
+		.data
+			text-align: center
+			margin-top: 50px
+
+@media(min-width: 992px) and (max-width: 1199px)
+	.jumbotron	
+		.navbar
+			left: 0
+			.navbar-collapse
+				.navbar-nav
+					float: right
+					a
+						font-size: 16px
+	
+@media(max-width: 1355px)
+	.jumbotron	
+		.navbar
+			left: 0
+			.navbar-collapse
+				.navbar-nav
+					margin-left: 0
